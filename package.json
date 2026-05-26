@@ -3,7 +3,7 @@
   "displayName": "MiMo Usage Monitor",
   "description": "在 VS Code 底部状态栏实时显示 Xiaomi MiMo 平台用量信息",
   "version": "0.2.1",
-  "publisher": "mimo-dev",
+  "publisher": "Buggo404",
   "engines": {
     "vscode": "^1.80.0"
   },
