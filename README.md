@@ -1,6 +1,11 @@
-# MiMo Usage Monitor
+# MiMo 用量监控
+
+[![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/Buggo404.mimo-usage-monitor?label=VS%20Code%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=Buggo404.mimo-usage-monitor)
+[![GitHub](https://img.shields.io/github/stars/Buggo404/mimo-usage-monitor?style=social)](https://github.com/Buggo404/mimo-usage-monitor)
 
 在 VS Code 底部状态栏实时显示 Xiaomi MiMo 平台 Token Plan 用量信息。
+
+> 📦 [VS Code 插件市场安装](https://marketplace.visualstudio.com/items?itemName=Buggo404.mimo-usage-monitor) | 💻 [GitHub 源码](https://github.com/Buggo404/mimo-usage-monitor)
 
 ## 功能
 
