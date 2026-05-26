@@ -1,8 +1,8 @@
 {
   "name": "mimo-usage-monitor",
-  "displayName": "MiMo Usage Monitor",
-  "description": "在 VS Code 底部状态栏实时显示 Xiaomi MiMo 平台用量信息",
-  "version": "0.2.1",
+  "displayName": "MiMo 用量监控",
+  "description": "在 VS Code 底部状态栏实时显示 Xiaomi MiMo 平台 Token Plan 用量信息，支持自动登录、自动刷新",
+  "version": "0.2.2",
   "publisher": "Buggo404",
   "engines": {
     "vscode": "^1.80.0"
@@ -19,9 +19,13 @@
   "keywords": [
     "mimo",
     "xiaomi",
+    "小米",
+    "用量",
+    "监控",
     "usage",
     "monitor",
-    "token"
+    "token",
+    "plan"
   ],
   "activationEvents": [
     "onStartupFinished"
