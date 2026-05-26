@@ -1,0 +1,12 @@
+.vscode/**
+.vscode-test/**
+src/**
+.gitignore
+tsconfig.json
+esbuild.js
+node_modules/**
+*.ts
+playwright-mcp/**
+.playwright-mcp/**
+out/*.d.ts
+out/*.d.ts.map

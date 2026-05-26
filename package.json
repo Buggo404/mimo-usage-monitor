@@ -1,0 +1,92 @@
+{
+  "name": "mimo-usage-monitor",
+  "displayName": "MiMo Usage Monitor",
+  "description": "在 VS Code 底部状态栏实时显示 Xiaomi MiMo 平台用量信息",
+  "version": "0.2.1",
+  "publisher": "mimo-dev",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT",
+  "keywords": [
+    "mimo",
+    "xiaomi",
+    "usage",
+    "monitor",
+    "token"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "MiMo Usage Monitor",
+      "properties": {
+        "mimoUsage.cookies": {
+          "type": "string",
+          "default": "",
+          "description": "浏览器 Cookie（userId, api-platform_slh, api-platform_ph），从浏览器开发者工具复制"
+        },
+        "mimoUsage.refreshInterval": {
+          "type": "number",
+          "default": 1,
+          "minimum": 1,
+          "maximum": 1440,
+          "description": "自动刷新间隔（分钟），最小 1 分钟，最大 1440 分钟（24 小时）"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "mimoUsage.refresh",
+        "title": "MiMo: 刷新用量数据"
+      },
+      {
+        "command": "mimoUsage.setCookies",
+        "title": "MiMo: 设置 Cookie"
+      },
+      {
+        "command": "mimoUsage.showDetail",
+        "title": "MiMo: 显示用量详情"
+      },
+      {
+        "command": "mimoUsage.logout",
+        "title": "MiMo: 退出登录"
+      },
+      {
+        "command": "mimoUsage.autoLogin",
+        "title": "MiMo: 自动登录"
+      },
+      {
+        "command": "mimoUsage.setRefreshInterval",
+        "title": "MiMo: 设置刷新间隔"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "node esbuild.js",
+    "watch": "node esbuild.js --watch",
+    "typecheck": "tsc --noEmit",
+    "package": "node esbuild.js --production && vsce package --no-dependencies"
+  },
+  "dependencies": {
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "@types/node": "^20.0.0",
+    "@types/ws": "^8.5.10",
+    "typescript": "^5.4.0",
+    "esbuild": "^0.20.0",
+    "@vscode/vsce": "^2.24.0"
+  }
+}
